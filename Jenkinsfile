@@ -16,5 +16,10 @@ pipeline {
                 echo "***************Building the docker image *************************"
             }
         }
+        stage ('K8SDeploy') {
+            steps {
+                echo "******************* Deploying using k8s *************************"
+            }
+        }
     }
 }
